@@ -1,0 +1,26 @@
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 505877
+    url: jdbc:mysql://localhost:3306/train?characterEncoding=utf-8
+  session:
+    store-type: none
+
+security:
+  basic:
+    enabled: true
+jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database: mysql
+
+server:
+  session:
+    timeout: 600
+#com:biz:login:loginTyp e:JSON
